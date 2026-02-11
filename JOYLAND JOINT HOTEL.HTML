@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospitality Management Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+        header {
+            background: #1e293b;
+            color: white;
+            padding: 15px 25px;
+            font-size: 20px;
+        }
+        .container {
+            display: flex;
+        }
+        nav {
+            width: 240px;
+            background: #0f172a;
+            height: 100vh;
+            color: white;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            padding: 15px 20px;
+            border-bottom: 1px solid #1e293b;
+            cursor: pointer;
+        }
+        nav ul li:hover {
+            background: #1e293b;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            margin-top: 40px;
+            color: #1e293b;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #e5e7eb;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    Hospitality Management System Dashboard
+</header>
+
+<div class="container">
+
+    <nav>
+        <ul>
+            <li>Dashboard</li>
+            <li>Room Reservation</li>
+            <li>Restaurant & Bar</li>
+            <li>Fish Point</li>
+            <li>Main Meals & Desserts</li>
+            <li>Recreation & Spa</li>
+            <li>Reports</li>
+            <li>Settings</li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- OVERVIEW -->
+        <div class="cards">
+            <div class="card">Total Revenue<br><strong>KES 125,000</strong></div>
+            <div class="card">Rooms Occupied<br><strong>18</strong></div>
+            <div class="card">Orders Today<br><strong>96</strong></div>
+            <div class="card">Active Bookings<br><strong>22</strong></div>
+        </div>
+
+        <!-- ROOM RESERVATION -->
+        <h2>Room Reservation</h2>
+        <table>
+            <tr>
+                <th>Room No</th>
+                <th>Guest</th>
+                <th>Status</th>
+                <th>Check-in</th>
+                <th>Check-out</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>John Doe</td>
+                <td>Occupied</td>
+                <td>12/01</td>
+                <td>15/01</td>
+            </tr>
+        </table>
+
+        <!-- RESTAURANT & BAR -->
+        <h2>Restaurant & Bar Orders</h2>
+        <table>
+            <tr>
+                <th>Table</th>
+                <th>Item</th>
+                <th>Status</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Grilled Chicken</td>
+                <td>Preparing</td>
+                <td>KES 1,200</td>
+            </tr>
+        </table>
+
+        <!-- FISH POINT -->
+        <h2>Fish Point Sales</h2>
+        <table>
+            <tr>
+                <th>Fish Type</th>
+                <th>Weight (kg)</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Tilapia</td>
+                <td>1.5</td>
+                <td>KES 900</td>
+            </tr>
+        </table>
+
+        <!-- MEALS & DESSERTS -->
+        <h2>Main Meals & Desserts</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Category</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Chocolate Cake</td>
+                <td>Dessert</td>
+                <td>KES 350</td>
+            </tr>
+        </table>
+
+        <!-- SPA & RECREATION -->
+        <h2>Recreation & Spa</h2>
+        <table>
+            <tr>
+                <th>Client</th>
+                <th>Service</th>
+                <th>Time</th>
+                <th>Staff</th>
+            </tr>
+            <tr>
+                <td>Mary W.</td>
+                <td>Massage</td>
+                <td>2:00 PM</td>
+                <td>Anna</td>
+            </tr>
+        </table>
+
+    </main>
+
+</div>
+
+</body>
